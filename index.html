@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+</head>
+<body>
+    <header>
+        <h1> JULIA Restaurant </h1>
+        <img src="./image/r1.jpg" alt="JULIA Restaurant" width="500" 
+        height="500">
+        <nav>
+            <ul>
+                <li><a href="https://www.cdc.gov/nutrition/resources-publications/benefits-of-healthy-eating.html">Benefits of Healthy Eating</a></li> 
+            </ul>
+        </nav>
+        
+
+    </header>
+    <main>
+        <form action="./app.js">
+            <label for="foodname">Food Name:</label><br>
+            <input type="hidden" name="food_name" value="$( '#select option:selected' ).val()"><br>
+            <label for="foodtypes">Types of the food:</label><br>
+            <select type="hidden" name="Types of the food" id="select">
+                <option value="none item" selected>- -</option>
+                <option value="Fruit and vegetables item" >Fruit and vegetables</option>
+                <option value="Starchy food item">Starchy food</option>
+                <option value="Dairy item">Dairy</option>
+                <option value="Protein">Protein</option>
+                <option value="Fat item">Fat</option>
+             </select><br>
+            <label for="price">Price:</label><br>
+            <input type="hidden" name="price" value="$( '#select option:selected' ).val()"><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+
+
+    </main>
+    <footer>
+        <p>&copy; copyright NoorAK 2022</p>
+        <span> eng.nooralkhateeb@gmail.com ,</span>
+        <span> +962785131336</span>
+        <p><a href="https://www.linkedin.com/in/noor-al-khateeb-1a1665143">Noor-Al-khateeb-linkedin.com</a></p>
+
+    </footer>
+</body>
+</html>
